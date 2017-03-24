@@ -46,7 +46,7 @@ gulp.task('browserify', function() {
 	// end this stream
 	this.emit('end');
 	})
-	.pipe(source('_build.js'))
+	.pipe(source('build.js'))
 	.pipe(buffer())
 	.pipe(sourcemaps.init({loadMaps: true}))
 	.pipe(sourcemaps.write())
